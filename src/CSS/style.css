@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  header img {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 1rem;
+    margin-top: 1rem;
+  }
+  
+  section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .specs ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .specs li {
+    background: #ddd;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px #eed600;
+  }
+  
+  .gallery img {
+    width: 48%;
+    margin: 1%;
+    border-radius: 10px;
+  }
+
+  .grid-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .grid-gallery img {
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+
+  .botao-motor {
+    background-color: #ffd209; /* vermelho esportivo */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px; /* botão arredondado */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .botao-motor:hover {
+    background-color: #000000;
+    transform: scale(1.05); /* leve aumento ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }

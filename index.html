@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lamborghini Aventador</title>
+    <link rel="stylesheet" href="./src/CSS/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Lamborghini Aventador</h1>
+        <img src="./src/imagens/lamborghini.png" alt="Lamborghini Aventador">
+    </header>
+
+    <section class="overview">
+        <h2>Visão Geral</h2>
+        <p>A Lamborghini Aventador é um superesportivo italiano puro-sangue, com motor V12 aspirado de 6.5 litros e até 780 cv na versão mais recente. A aceleração de 0 a 100 km/h ocorre em cerca de 2,8 segundos, com velocidade máxima superior a 350 km/h. Seu visual agressivo, com linhas angulares e portas tipo tesoura, a torna uma verdadeira obra de arte sobre rodas. O som do V12 é visceral e inconfundível, parte essencial da experiência. O interior é futurista, com inspiração aeronáutica e materiais como fibra de carbono e Alcantara. A tração integral e a aerodinâmica ativa ajudam a domar a brutalidade da potência. O câmbio automatizado de sete marchas é rápido e direto, embora menos suave que o de rivais. É um carro mais emocional que racional, feito para impressionar em cada detalhe. A Aventador representa o ápice da Lamborghini em performance e estilo. Um verdadeiro ícone moderno.</p>
+    </section>
+
+    <section class="specs">
+        <h2>Especificações</h2>
+        <ul>
+            <li>0-100 km/h: 2.8 segundos</li>
+            <li>Velocidade Máxima: 355 km/h</li>
+            <li>Motor: 6.5 litros V12 aspirado</li>
+            <li>Potência: 780 cv</li>
+            <li>Tração: AWD (Integral)</li>
+        </ul>
+    </section>
+
+    <section class="gallery">
+        <h2>Galeria</h2>
+        <div class="grid-gallery">
+            <img src="./src/imagens/interior.jpg" alt="Interior da Lamborghini">
+            <img src="./src/imagens/banco.jpg" alt="Bancos da Lamborghini">
+            <img src="./src/imagens/traseira.jpg" alt="Traseira da Lamborghini">
+            <img src="./src/imagens/frente.jpg" alt="Frente da Lamborghini">
+            <img src="./src/imagens/lateral.jpg" alt="Lateral da Lamborghini">
+            <img src="./src/imagens/teto.jpg" alt="Teto da Lamborghini">
+        </div>
+    </section>
+
+    <section class="motor-sound">
+        <button class="botao-motor" onclick="tocarSom()">Ouvir som do motor</button>
+
+        <audio id="motorAudio">
+            <source src="./src/sons/motor.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio HTML.
+        </audio>
+    </section>
+
+    <section class="fun-facts">
+        <h2>Curiosidade</h2>
+        <p>Sabia que a Lamborghini Aventador pode atingir 100 km/h em impressionantes 2,8 segundos, superando muitos carros de preço mais elevado?</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 • Feito por Vinicius Copola • Porsche 911 Turbo S</p>
+    </footer>
+
+    <script>
+        function tocarSom() {
+            const audio = document.getElementById("motorAudio");
+            audio.currentTime = 0;
+            audio.play();
+        }
+    </script>
+    
+</body>
+
+</html>
